@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void change(int C[], int valor)
-{
+void change(int C[], int valor) {
 	int *S;
 	int soma = 0;
 	int iC=0;
@@ -11,41 +10,33 @@ void change(int C[], int valor)
 	
 	S = (int *)malloc(10 * sizeof(int));
 	
-	while( (soma < valor) && (C != NULL) )
-	{
+	while((soma < valor) && (C != NULL) ) {
 		x = C[iC];
 		
-		if( (soma+x) <= valor )
-		{
+		if( (soma+x) <= valor ) {
 			soma = soma + x;
 			S[i] = x;
 			i++;	
-		} 
-		else
-		{
+		} else {
 			iC++;
 		}
 	}
 	
-	if(soma == valor)
-	{
+	if(soma == valor) {
 		int j;
-		for(j=0;j<i;j++){
+		for(j=0;j<i;j++) {
 			printf("%d ", S[j]);
 		}
 		iC=0;
 		i=0;
-	}
-	else
-	{
-		printf("não foi possivel");
+	} else {
+		printf("nÃ£o foi possivel");
 		iC=0;
 		i=0;
 	}
 }
 
-int main()
-{
+int main() {
 	int C[] = {100,50,25,10,1};
 	change(C,17);
 }
