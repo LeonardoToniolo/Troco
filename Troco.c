@@ -27,13 +27,12 @@ void change(int C[], int valor) {
 		for(j=0;j<i;j++) {
 			printf("%d ", S[j]);
 		}
-		iC=0;
-		i=0;
 	} else {
 		printf("não foi possivel");
-		iC=0;
-		i=0;
 	}
+	
+	iC=0;
+	i=0;
 }
 
 int main() {
@@ -41,3 +40,4 @@ int main() {
 	change(C,17);
 }
 printf("Fim do programa!");
+
