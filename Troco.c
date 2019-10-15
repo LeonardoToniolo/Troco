@@ -39,5 +39,5 @@ int main() {
 	int C[] = {100,50,25,10,1};
 	change(C,17);
 }
-printf("Fim do programa");
+printf("Fim do programa!");
 
