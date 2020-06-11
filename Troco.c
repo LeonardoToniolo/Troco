@@ -7,21 +7,21 @@ void change(int C[], int valor) {
 	int iC=0;
 	int i=0;
 	int x = 0;
-	
+
 	S = (int *)malloc(10 * sizeof(int));
-	
+
 	while((soma < valor) && (C != NULL) ) {
 		x = C[iC];
-		
+
 		if( (soma+x) <= valor ) {
 			soma = soma + x;
 			S[i] = x;
-			i++;	
+			i++;
 		} else {
 			iC++;
 		}
 	}
-	
+
 	if(soma == valor) {
 		int j;
 		for(j=0;j<i;j++) {
@@ -30,14 +30,12 @@ void change(int C[], int valor) {
 	} else {
 		printf("não foi possivel");
 	}
-	
+
 	iC=0;
 	i=0;
 }
 
 int main() {
 	int C[] = {100,50,25,10,1};
-	change(C,17);
+	change(C,10);
 }
-printf("Fim do programa!");
-
